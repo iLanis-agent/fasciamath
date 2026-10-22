@@ -1,0 +1,920 @@
+{
+ "cases": [
+  {
+   "fn": "fascia",
+   "args": [
+    "120",
+    "16"
+   ],
+   "expect": "The run of 120 ft takes 8 boards of 16 ft, leaving 8 ft of the last one."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "120",
+    "18"
+   ],
+   "expect": "The run of 120 ft at 18 inches deep needs 180 sq ft of soffit."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "180",
+    "12"
+   ],
+   "expect": "The 180 sq ft with panels of 12 sq ft each takes 15 panels, leaving 0 sq ft of the last one."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "8",
+    "24",
+    "15",
+    "14",
+    "120"
+   ],
+   "expect": "The 8 boards at $24 and the 15 panels at $14 cost $402.00, or $3.35 a foot over the 120 ft."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "5979",
+    "3"
+   ],
+   "expect": "The run of 5979 ft takes 1993 boards of 3 ft, with nothing left over."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "5260",
+    "22"
+   ],
+   "expect": "The run of 5260 ft takes 240 boards of 22 ft, leaving 20 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "2591",
+    "2"
+   ],
+   "expect": "The run of 2591 ft takes 1296 boards of 2 ft, leaving 1 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "8803",
+    "22"
+   ],
+   "expect": "The run of 8803 ft takes 401 boards of 22 ft, leaving 19 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "856",
+    "16"
+   ],
+   "expect": "The run of 856 ft takes 54 boards of 16 ft, leaving 8 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "6676",
+    "15"
+   ],
+   "expect": "The run of 6676 ft takes 446 boards of 15 ft, leaving 14 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "4474",
+    "23"
+   ],
+   "expect": "The run of 4474 ft takes 195 boards of 23 ft, leaving 11 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "343",
+    "24"
+   ],
+   "expect": "The run of 343 ft takes 15 boards of 24 ft, leaving 17 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "665",
+    "9"
+   ],
+   "expect": "The run of 665 ft takes 74 boards of 9 ft, leaving 1 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "2972",
+    "19"
+   ],
+   "expect": "The run of 2972 ft takes 157 boards of 19 ft, leaving 11 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "4833",
+    "1"
+   ],
+   "expect": "The run of 4833 ft takes 4833 boards of 1 ft, with nothing left over."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "1124",
+    "15"
+   ],
+   "expect": "The run of 1124 ft takes 75 boards of 15 ft, leaving 1 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "6591",
+    "15"
+   ],
+   "expect": "The run of 6591 ft takes 440 boards of 15 ft, leaving 9 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "3716",
+    "3"
+   ],
+   "expect": "The run of 3716 ft takes 1239 boards of 3 ft, leaving 1 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "1335",
+    "14"
+   ],
+   "expect": "The run of 1335 ft takes 96 boards of 14 ft, leaving 9 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "196",
+    "7"
+   ],
+   "expect": "The run of 196 ft takes 28 boards of 7 ft, with nothing left over."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "700",
+    "15"
+   ],
+   "expect": "The run of 700 ft takes 47 boards of 15 ft, leaving 5 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "8036",
+    "12"
+   ],
+   "expect": "The run of 8036 ft takes 670 boards of 12 ft, leaving 4 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "2357",
+    "20"
+   ],
+   "expect": "The run of 2357 ft takes 118 boards of 20 ft, leaving 3 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "2302",
+    "14"
+   ],
+   "expect": "The run of 2302 ft takes 165 boards of 14 ft, leaving 8 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "4292",
+    "23"
+   ],
+   "expect": "The run of 4292 ft takes 187 boards of 23 ft, leaving 9 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "1320",
+    "1"
+   ],
+   "expect": "The run of 1320 ft takes 1320 boards of 1 ft, with nothing left over."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "1188",
+    "17"
+   ],
+   "expect": "The run of 1188 ft takes 70 boards of 17 ft, leaving 2 ft of the last one."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "5192",
+    "4"
+   ],
+   "expect": "The run of 5192 ft takes 1298 boards of 4 ft, with nothing left over."
+  },
+  {
+   "fn": "fascia",
+   "args": [
+    "5196",
+    "12"
+   ],
+   "expect": "The run of 5196 ft takes 433 boards of 12 ft, with nothing left over."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "6844",
+    "107"
+   ],
+   "expect": "The run of 6844 ft at 107 inches deep needs 61025.67 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "8058",
+    "102"
+   ],
+   "expect": "The run of 8058 ft at 102 inches deep needs 68493 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "4291",
+    "29"
+   ],
+   "expect": "The run of 4291 ft at 29 inches deep needs 10369.92 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "5032",
+    "74"
+   ],
+   "expect": "The run of 5032 ft at 74 inches deep needs 31030.67 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "5299",
+    "59"
+   ],
+   "expect": "The run of 5299 ft at 59 inches deep needs 26053.42 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "3092",
+    "71"
+   ],
+   "expect": "The run of 3092 ft at 71 inches deep needs 18294.33 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "8346",
+    "76"
+   ],
+   "expect": "The run of 8346 ft at 76 inches deep needs 52858 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "2684",
+    "38"
+   ],
+   "expect": "The run of 2684 ft at 38 inches deep needs 8499.33 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "6501",
+    "35"
+   ],
+   "expect": "The run of 6501 ft at 35 inches deep needs 18961.25 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "1783",
+    "20"
+   ],
+   "expect": "The run of 1783 ft at 20 inches deep needs 2971.67 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "4568",
+    "12"
+   ],
+   "expect": "The run of 4568 ft at 12 inches deep needs 4568 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "4266",
+    "70"
+   ],
+   "expect": "The run of 4266 ft at 70 inches deep needs 24885 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "8486",
+    "11"
+   ],
+   "expect": "The run of 8486 ft at 11 inches deep needs 7778.83 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "7771",
+    "45"
+   ],
+   "expect": "The run of 7771 ft at 45 inches deep needs 29141.25 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "1237",
+    "96"
+   ],
+   "expect": "The run of 1237 ft at 96 inches deep needs 9896 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "7386",
+    "101"
+   ],
+   "expect": "The run of 7386 ft at 101 inches deep needs 62165.5 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "1335",
+    "55"
+   ],
+   "expect": "The run of 1335 ft at 55 inches deep needs 6118.75 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "1552",
+    "47"
+   ],
+   "expect": "The run of 1552 ft at 47 inches deep needs 6078.67 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "6350",
+    "29"
+   ],
+   "expect": "The run of 6350 ft at 29 inches deep needs 15345.83 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "2110",
+    "81"
+   ],
+   "expect": "The run of 2110 ft at 81 inches deep needs 14242.5 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "6437",
+    "8"
+   ],
+   "expect": "The run of 6437 ft at 8 inches deep needs 4291.33 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "1866",
+    "59"
+   ],
+   "expect": "The run of 1866 ft at 59 inches deep needs 9174.5 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "290",
+    "79"
+   ],
+   "expect": "The run of 290 ft at 79 inches deep needs 1909.17 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "3893",
+    "5"
+   ],
+   "expect": "The run of 3893 ft at 5 inches deep needs 1622.08 sq ft of soffit."
+  },
+  {
+   "fn": "soffit",
+   "args": [
+    "50",
+    "102"
+   ],
+   "expect": "The run of 50 ft at 102 inches deep needs 425 sq ft of soffit."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "2463841",
+    "22"
+   ],
+   "expect": "The 2463841 sq ft with panels of 22 sq ft each takes 111993 panels, leaving 5 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "5479940",
+    "85"
+   ],
+   "expect": "The 5479940 sq ft with panels of 85 sq ft each takes 64470 panels, leaving 10 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "39698",
+    "74"
+   ],
+   "expect": "The 39698 sq ft with panels of 74 sq ft each takes 537 panels, leaving 40 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "8842823",
+    "61"
+   ],
+   "expect": "The 8842823 sq ft with panels of 61 sq ft each takes 144965 panels, leaving 42 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "687954",
+    "7"
+   ],
+   "expect": "The 687954 sq ft with panels of 7 sq ft each takes 98280 panels, leaving 6 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "1231499",
+    "36"
+   ],
+   "expect": "The 1231499 sq ft with panels of 36 sq ft each takes 34209 panels, leaving 25 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "2553493",
+    "74"
+   ],
+   "expect": "The 2553493 sq ft with panels of 74 sq ft each takes 34507 panels, leaving 25 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "3203773",
+    "24"
+   ],
+   "expect": "The 3203773 sq ft with panels of 24 sq ft each takes 133491 panels, leaving 11 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "2955550",
+    "19"
+   ],
+   "expect": "The 2955550 sq ft with panels of 19 sq ft each takes 155556 panels, leaving 14 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "7672997",
+    "90"
+   ],
+   "expect": "The 7672997 sq ft with panels of 90 sq ft each takes 85256 panels, leaving 43 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "8579913",
+    "66"
+   ],
+   "expect": "The 8579913 sq ft with panels of 66 sq ft each takes 129999 panels, leaving 21 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "9885267",
+    "59"
+   ],
+   "expect": "The 9885267 sq ft with panels of 59 sq ft each takes 167547 panels, leaving 6 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "5143443",
+    "71"
+   ],
+   "expect": "The 5143443 sq ft with panels of 71 sq ft each takes 72443 panels, leaving 10 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "8513056",
+    "56"
+   ],
+   "expect": "The 8513056 sq ft with panels of 56 sq ft each takes 152019 panels, leaving 8 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "4024716",
+    "10"
+   ],
+   "expect": "The 4024716 sq ft with panels of 10 sq ft each takes 402472 panels, leaving 4 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "3172100",
+    "71"
+   ],
+   "expect": "The 3172100 sq ft with panels of 71 sq ft each takes 44678 panels, leaving 38 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "7461071",
+    "45"
+   ],
+   "expect": "The 7461071 sq ft with panels of 45 sq ft each takes 165802 panels, leaving 19 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "4855640",
+    "17"
+   ],
+   "expect": "The 4855640 sq ft with panels of 17 sq ft each takes 285626 panels, leaving 2 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "4083967",
+    "25"
+   ],
+   "expect": "The 4083967 sq ft with panels of 25 sq ft each takes 163359 panels, leaving 8 sq ft of the last one."
+  },
+  {
+   "fn": "panels",
+   "args": [
+    "9826159",
+    "33"
+   ],
+   "expect": "The 9826159 sq ft with panels of 33 sq ft each takes 297763 panels, leaving 20 sq ft of the last one."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "19860",
+    "2750.49",
+    "237458",
+    "6549.73",
+    "641"
+   ],
+   "expect": "The 19860 boards at $2750.49 and the 237458 panels at $6549.73 cost $1609910517.74, or $2511560.87 a foot over the 641 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "47065",
+    "559.89",
+    "907373",
+    "604.3",
+    "8585"
+   ],
+   "expect": "The 47065 boards at $559.89 and the 907373 panels at $604.3 cost $574676726.75, or $66939.63 a foot over the 8585 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4643",
+    "9964.77",
+    "103703",
+    "7150.32",
+    "1766"
+   ],
+   "expect": "The 4643 boards at $9964.77 and the 103703 panels at $7150.32 cost $787776062.07, or $446079.31 a foot over the 1766 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "63422",
+    "3940.41",
+    "432181",
+    "2315.91",
+    "475"
+   ],
+   "expect": "The 63422 boards at $3940.41 and the 432181 panels at $2315.91 cost $1250800982.73, or $2633265.23 a foot over the 475 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "62160",
+    "1893.37",
+    "542310",
+    "2989.54",
+    "4178"
+   ],
+   "expect": "The 62160 boards at $1893.37 and the 542310 panels at $2989.54 cost $1738949316.60, or $416215.73 a foot over the 4178 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "75299",
+    "8012.35",
+    "437156",
+    "3996.47",
+    "9171"
+   ],
+   "expect": "The 75299 boards at $8012.35 and the 437156 panels at $3996.47 cost $2350402781.97, or $256286.42 a foot over the 9171 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "11644",
+    "3663.51",
+    "81794",
+    "8156.45",
+    "4810"
+   ],
+   "expect": "The 11644 boards at $3663.51 and the 81794 panels at $8156.45 cost $709806581.74, or $147568.94 a foot over the 4810 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "21141",
+    "8618.71",
+    "503861",
+    "3387.61",
+    "2994"
+   ],
+   "expect": "The 21141 boards at $8618.71 and the 503861 panels at $3387.61 cost $1889092710.32, or $630959.49 a foot over the 2994 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "5246",
+    "4940.7",
+    "675886",
+    "5717.9",
+    "556"
+   ],
+   "expect": "The 5246 boards at $4940.7 and the 675886 panels at $5717.9 cost $3890567471.60, or $6997423.51 a foot over the 556 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "98684",
+    "2247.6",
+    "491238",
+    "5987.98",
+    "2414"
+   ],
+   "expect": "The 98684 boards at $2247.6 and the 491238 panels at $5987.98 cost $3163325477.64, or $1310408.23 a foot over the 2414 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "54639",
+    "1740.74",
+    "47700",
+    "3635.63",
+    "1450"
+   ],
+   "expect": "The 54639 boards at $1740.74 and the 47700 panels at $3635.63 cost $268531843.86, or $185194.38 a foot over the 1450 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "74900",
+    "2675.98",
+    "555643",
+    "4906.49",
+    "2199"
+   ],
+   "expect": "The 74900 boards at $2675.98 and the 555643 panels at $4906.49 cost $2926687725.07, or $1330917.56 a foot over the 2199 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "55520",
+    "3106.51",
+    "746518",
+    "9064.23",
+    "6502"
+   ],
+   "expect": "The 55520 boards at $3106.51 and the 746518 panels at $9064.23 cost $6939084286.34, or $1067223.05 a foot over the 6502 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "58272",
+    "9067.95",
+    "902210",
+    "5943.62",
+    "3674"
+   ],
+   "expect": "The 58272 boards at $9067.95 and the 902210 panels at $5943.62 cost $5890800982.60, or $1603375.34 a foot over the 3674 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "17117",
+    "3359.57",
+    "546606",
+    "5439.05",
+    "9442"
+   ],
+   "expect": "The 17117 boards at $3359.57 and the 546606 panels at $5439.05 cost $3030523123.99, or $320961.99 a foot over the 9442 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "92149",
+    "5814.34",
+    "694280",
+    "261.35",
+    "5270"
+   ],
+   "expect": "The 92149 boards at $5814.34 and the 694280 panels at $261.35 cost $717235694.66, or $136097.85 a foot over the 5270 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "79367",
+    "693.12",
+    "413697",
+    "7004.28",
+    "2872"
+   ],
+   "expect": "The 79367 boards at $693.12 and the 413697 panels at $7004.28 cost $2952660478.20, or $1028085.12 a foot over the 2872 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "81255",
+    "9844.32",
+    "717019",
+    "4990.39",
+    "3265"
+   ],
+   "expect": "The 81255 boards at $9844.32 and the 717019 panels at $4990.39 cost $4378104669.01, or $1340920.27 a foot over the 3265 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "66845",
+    "2914.04",
+    "764792",
+    "7629.06",
+    "8490"
+   ],
+   "expect": "The 66845 boards at $2914.04 and the 764792 panels at $7629.06 cost $6029433059.32, or $710180.57 a foot over the 8490 ft."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "85744",
+    "8120.84",
+    "678825",
+    "2035.09",
+    "1655"
+   ],
+   "expect": "The 85744 boards at $8120.84 and the 678825 panels at $2035.09 cost $2077783274.21, or $1255458.17 a foot over the 1655 ft."
+  }
+ ],
+ "errors": [
+  [
+   "fascia",
+   [
+    "0",
+    "16"
+   ]
+  ],
+  [
+   "fascia",
+   [
+    "120",
+    "0"
+   ]
+  ],
+  [
+   "soffit",
+   [
+    "0",
+    "18"
+   ]
+  ],
+  [
+   "soffit",
+   [
+    "120",
+    "0"
+   ]
+  ],
+  [
+   "panels",
+   [
+    "0",
+    "12"
+   ]
+  ],
+  [
+   "panels",
+   [
+    "180",
+    "0"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "0",
+    "24",
+    "15",
+    "14",
+    "120"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "8",
+    "0",
+    "15",
+    "14",
+    "120"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "8",
+    "24",
+    "0",
+    "14",
+    "120"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "8",
+    "24",
+    "15",
+    "0",
+    "120"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "8",
+    "24",
+    "15",
+    "14",
+    "0"
+   ]
+  ],
+  [
+   "fascia",
+   [
+    "12.5",
+    "16"
+   ]
+  ]
+ ]
+}
