@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fascia Math - app</title>
+<style>
+  :root { --accent:#6b3f52; --ink:#211820; --paper:#f7f3f5; --soft:#ebe2e6; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #bba3ae; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #bba3ae; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#7a6670; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Fascia Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts trim with multiplication and rounding-up: the fascia boards an eave run takes, the soffit area from the run and depth, the panels from a panel's coverage, and the cost per foot of run. The run, the depth, the coverage and the prices are yours to measure or read off your own package label. It applies the counting as written, so it has not seen your roof and does not know your overhang framing, your vent needs, your waste, your moisture or your local building rules, and it gives no verdict that an eave is sound. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The fascia truth</h2>
+    <p class="note">Fascia: the run divided by the board length, rounded up, and what is left of the last board.</p>
+    <div class="row2"><div><label for="f-r">Eave run (ft)</label><input id="f-r" type="text" value="120"></div><div><label for="f-b">Board length (ft)</label><input id="f-b" type="text" value="16"></div></div>
+    <div class="out" id="f-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The soffit truth</h2>
+    <p class="note">Soffit: the run times the depth, in square feet.</p>
+    <div class="row2"><div><label for="s-r">Eave run (ft)</label><input id="s-r" type="text" value="120"></div><div><label for="s-d">Soffit depth (inches)</label><input id="s-d" type="text" value="18"></div></div>
+    <div class="out" id="s-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The panels truth</h2>
+    <p class="note">Panels: the area divided by one panel's coverage, rounded up.</p>
+    <div class="row2"><div><label for="p-a">Area (sq ft)</label><input id="p-a" type="text" value="180"></div><div><label for="p-c">Panel coverage (sq ft)</label><input id="p-c" type="text" value="12"></div></div>
+    <div class="out" id="p-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The cost truth</h2>
+    <p class="note">Cost: the boards and panels at their prices, and what that is per foot of run.</p>
+    <div class="row2"><div><label for="c-b">Boards</label><input id="c-b" type="text" value="8"></div><div><label for="c-bp">Board price (dollars)</label><input id="c-bp" type="text" value="24"></div></div>
+    <div class="row2"><div><label for="c-n">Panels</label><input id="c-n" type="text" value="15"></div><div><label for="c-pp">Panel price (dollars)</label><input id="c-pp" type="text" value="14"></div></div>
+    <div class="row2"><div><label for="c-r">Eave run (ft)</label><input id="c-r" type="text" value="120"></div></div>
+    <div class="out" id="c-out"></div>
+  </div>
+
+  <footer>Fascia Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("f-out", () => fasciaTruth(v("f-r"), v("f-b")));
+    show("s-out", () => soffitTruth(v("s-r"), v("s-d")));
+    show("p-out", () => panelsTruth(v("p-a"), v("p-c")));
+    show("c-out", () => costTruth(v("c-b"), v("c-bp"), v("c-n"), v("c-pp"), v("c-r")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
